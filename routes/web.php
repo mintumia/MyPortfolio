@@ -26,7 +26,7 @@ Route::get('/', function () {
 
 Route::get('/about',function (){
 
-    return Inertia::render('AboutPage');
+    return Inertia::render('AboutPage',['org'=>['name'=>"Mintu Mia",'url'=>"OK"]]);
 
 });
 
