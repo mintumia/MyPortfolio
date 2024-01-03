@@ -1,11 +1,30 @@
 <script setup>
+import {Head} from "@inertiajs/vue3";
 
+import MintuMainView from "@/Components/MintuMainView.vue";
+import MintuLayout from "@/Layouts/MintuLayout.vue";
 </script>
 
 <template>
-<div>
-    <h1 class="text-2xl font-semibold">This is Home Page</h1>
-</div>
+<mintu-layout>
+    <div>
+        <Head title="Home" />
+
+
+        <mintu-main-view/>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!
+        </div>
+    </div>
+</mintu-layout>
 </template>
 
 <style scoped>

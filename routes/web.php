@@ -24,7 +24,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/about',function (){
+Route::get('/about/{id}/{params?}',function ($id,$params){
 
     return Inertia::render('AboutPage',['org'=>['name'=>"Mintu Mia",'url'=>"OK"]]);
 

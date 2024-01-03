@@ -8,7 +8,8 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 import {createPinia} from 'pinia';
 
 
-const appName = import.meta.env.VITE_APP_NAME || 'Mintu';
+
+const appName = import.meta.env.VITE_APP_NAME || 'MintuApps';
 const pinia = createPinia();
 
 createInertiaApp({
