@@ -22,14 +22,23 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('home');
 
-Route::get('/about/{id}/{params?}',function ($id,$params){
+Route::get('/about/{id?}/{params?}',function ($id="",$params=""){
 
     return Inertia::render('AboutPage',['org'=>['name'=>"Mintu Mia",'url'=>"OK"]]);
 
-});
+})->name('about');
 
+Route::get('/service',function (){
+
+    return Inertia::render('ServicePage');
+
+})->name('service');
+
+Route::get('/contactus',function (){
+    return Inertia::render('ContactUs');
+})->name('contact');
 
 
 Route::middleware([

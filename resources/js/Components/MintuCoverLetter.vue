@@ -6,13 +6,10 @@ import {Icon} from "@iconify/vue";
 <template>
 <div>
     <div class="min-w-[340px] md:max-w-[850px] m-3 p-2">
-        <h2 class="text-xl">Hi <span><Icon icon="emojione:waving-hand" /></span>Some Text Here</h2>
-        <h2 class="text-xl">Hi <span><Icon icon="skill-icons:azure-dark" /></span>Some Text Here</h2>
+        <h2 class="flex text-xl">Hi <span class="mx-3"><Icon icon="emojione:waving-hand" /></span>I am Md. Mintu Mia</h2>
+        <h2 class="text-3xl font-bold">I am a PHP Laravel Vuejs Full Stack Web Developer.</h2>
 
-
-
-
-        <p class="text-left">
+        <p class="text-left text-lg">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quasi?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quasi?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quasi?

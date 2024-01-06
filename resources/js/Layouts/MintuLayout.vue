@@ -5,7 +5,7 @@ import MintuNavbar from "@/Components/MintuNavbar.vue";
 
 <template>
 <div>
-<header>
+<header class="w-full">
     <mintu-navbar />
 </header>
     <main>
