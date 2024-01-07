@@ -8,7 +8,7 @@ import MintuNavbar from "@/Components/MintuNavbar.vue";
 <header class="w-full">
     <mintu-navbar />
 </header>
-    <main>
+    <main class="max-w-[1024px] mx-auto">
         <slot />
 
     </main>

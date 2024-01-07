@@ -6,7 +6,7 @@ import MintuCoverLetter from "@/Components/MintuCoverLetter.vue";
 
 <template>
 <div>
-    <div class="flex max-sm:flex-wrap justify-center content-center items-center min-h-screen min-w-full mx-auto">
+    <div class="max-md:flex-wrap md:flex max-sm:flex-wrap content-center items-center justify-center mx-auto text-center">
         <mintu-avatar-card />
         <mintu-cover-letter/>
 
