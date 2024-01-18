@@ -1,5 +1,11 @@
 import './bootstrap';
+import 'primevue/resources/themes/lara-light-green/theme.css';
+//import './assets/theme.css';
+
 import '../css/app.css';
+
+//import 'primevue/resources/themes/lara-light-green/theme.css';
+
 
 
 

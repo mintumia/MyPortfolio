@@ -27,7 +27,6 @@
         "yup": "^1.3.2"
     },
     "dependencies": {
-        "flowbite": "^2.2.1",
         "primeicons": "^6.0.1",
         "primevue": "^3.46.0"
     }
