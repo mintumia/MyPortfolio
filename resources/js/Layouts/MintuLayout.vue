@@ -4,7 +4,7 @@ import MintuNavbar from "@/Components/MintuNavbar.vue";
 </script>
 
 <template>
-<div>
+<div class="p-fluid">
 <header class="w-full">
     <mintu-navbar />
 </header>

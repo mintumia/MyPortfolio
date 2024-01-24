@@ -8,6 +8,7 @@ import Calendar from "primevue/calendar";
 import MintuMainView from "@/Components/MintuMainView.vue";
 import MintuLayout from "@/Layouts/MintuLayout.vue";
 import MintuPrimeTest from "@/Components/MintuPrimeTest.vue";
+import MintuMenubar from "@/Components/MintuMenubar.vue";
 
 const date = ref();
 
@@ -18,6 +19,7 @@ const date = ref();
 <mintu-layout>
     <div>
         <Head title="Home" />
+<MintuMenubar />
 
 <MintuPrimeTest />
 
