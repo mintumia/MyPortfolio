@@ -1,15 +1,11 @@
 import './bootstrap';
-import '../css/app.css';
+
 //import 'primevue/resources/themes/lara-light-indigo/theme.css';
 import 'primevue/resources/themes/lara-light-green/theme.css';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css'
+import '../css/app.css';
 
-//import './assets/theme.css';
-
-
-
-//import 'primevue/resources/themes/lara-light-green/theme.css';
 
 
 
@@ -19,10 +15,16 @@ import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 import PrimeVue from "primevue/config";
+import ToastService from "primevue/toastservice";
+
 //import Lara from '@/presets/lara';
+
+
+
 import {createPinia} from 'pinia';
 
-
+//const prime = usePrimeVue();
+//prime.config.pt = Lara;
 
 const appName = import.meta.env.VITE_APP_NAME || 'MintuApps';
 const pinia = createPinia();
@@ -34,7 +36,9 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(pinia)
-           .use(PrimeVue,{unstyled: false})
+           //.use(PrimeVue,{unstyled:true})
+          .use(PrimeVue,{unstyled:false})
+            .use(ToastService)
             .use(ZiggyVue)
             .mount(el);
     },

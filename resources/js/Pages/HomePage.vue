@@ -5,10 +5,12 @@ import {ref} from 'vue';
 import Button from "primevue/button";
 import Calendar from "primevue/calendar";
 
+
 import MintuMainView from "@/Components/MintuMainView.vue";
 import MintuLayout from "@/Layouts/MintuLayout.vue";
 import MintuPrimeTest from "@/Components/MintuPrimeTest.vue";
 import MintuMenubar from "@/Components/MintuMenubar.vue";
+import MintuToast from "@/Components/MintuToast.vue";
 
 const date = ref();
 
@@ -19,6 +21,11 @@ const date = ref();
 <mintu-layout>
     <div>
         <Head title="Home" />
+        <MintuToast />
+
+<!--        <div class="card flex justify-content-center">
+            <Button :pt="{root:{class:'bg-yellow-500 rounded p-4'}}" label="Submit" />
+        </div>-->
 <MintuMenubar />
 
 <MintuPrimeTest />

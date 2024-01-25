@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <Menubar :model="items" />
+        <Menubar :pt="{root:{class:'bg-indigo-400'}}" :model="items" />
     </div>
 </template>
 

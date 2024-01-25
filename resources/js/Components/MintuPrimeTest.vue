@@ -9,7 +9,7 @@
             <div class="card flex flex-wrap gap-3 p-fluid">
                 <div class="flex-auto">
                     <label for="buttondisplay" class="font-bold block mb-2"> Button Display </label>
-                    <Calendar v-model="buttondisplay" showIcon inputId="buttondisplay" />
+                    <Calendar v-model="buttondisplay" showIcon inputId="buttondisplay" :pt="{root:'rounded-lg'}" />
                 </div>
                 <div class="flex-auto">
                     <label for="icondisplay" class="font-bold block mb-2"> Icon Display </label>
