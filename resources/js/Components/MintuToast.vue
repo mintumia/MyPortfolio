@@ -1,7 +1,7 @@
 
 <template>
     <div class="card flex justify-content-center">
-        <Toast position="bottom-right" />
+        <Toast position="top-right" />
 <!--        <Button label="Show" @click="show()" />-->
         <Button @click="show" :pt="{root:{class:'bg-yellow-500 rounded p-4'}}" label="Submit" />
     </div>

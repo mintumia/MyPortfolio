@@ -2,6 +2,7 @@
 import {Link, router} from "@inertiajs/vue3";
 import {ref} from 'vue';
 import {Icon} from "@iconify/vue";
+import MintuTestMenu from "@/Components/MintuTestMenu.vue";
 
 const navToggle = ref(false);
 
@@ -11,6 +12,8 @@ const navToggle = ref(false);
 <template>
 <div>
    <nav class="bg-slate-100">
+       <MintuTestMenu />
+<!--
 <div class="max-md:flex-wrap md:flex md:max-w-5xl items-center justify-between content-center mx-auto">
 
    <div class="flex max-md:w-full max-md:min-w-max items-center justify-between bg-amber-200 px-6">
@@ -31,6 +34,7 @@ const navToggle = ref(false);
 
 
 </div>
+-->
 
 
    </nav>
