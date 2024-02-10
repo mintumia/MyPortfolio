@@ -21,7 +21,7 @@ const items = ref([
         icon: 'pi pi-home',
        command:()=>{
             //router.visit('/home');
-            router.visit('/home');
+            router.visit('/');
 
        }
     },
@@ -65,7 +65,7 @@ const items = ref([
         label: 'Contact',
         icon: 'pi pi-envelope',
         command: () => {
-
+            router.visit('/contactus');
 
         }
 
