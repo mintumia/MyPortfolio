@@ -21,7 +21,7 @@ import {onMounted} from "vue";
              <div class="relative w-full h-full bg-blue-600 rounded-lg z-30">
                  <img class="rounded-full mx-auto" :src="$page.url+'assets/avatar.png'" alt="avatar">
 
-                 <h2 class="text-2xl font-semibold p-3 m-2">Md. Mintu Mia</h2>
+                 <h2 class="text-3xl font-semibold p-3 m-2">Md. Mintu Mia</h2>
                  <h3 class="text-xl font-semibold p-3 m-2 mb-4">PHP Laravel Full Stack Web Developer </h3>
                  <hr/>
 
