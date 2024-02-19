@@ -14,6 +14,8 @@ import MintuToast from "@/Components/MintuToast.vue";
 import MintuTestMenu from "@/Components/MintuTestMenu.vue";
 import MintuTestimonial from "@/Components/MintuTestimonial.vue";
 import MintuHeroTest from "@/Components/MintuHeroTest.vue";
+import MintuFeatures from "@/Components/MintuFeatures.vue";
+import MintuSignup from "@/Components/MintuSignup.vue";
 
 const date = ref();
 
@@ -28,6 +30,8 @@ const date = ref();
         <MintuToast />
         <MintuHeroTest />
         <MintuTestimonial />
+        <MintuFeatures />
+        <MintuSignup />
 
 <!--        <div class="card flex justify-content-center">
             <Button :pt="{root:{class:'bg-yellow-500 rounded p-4'}}" label="Submit" />
