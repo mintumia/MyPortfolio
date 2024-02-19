@@ -1,39 +1,28 @@
 <script setup>
-import {computed, onMounted, ref} from 'vue';
-import {eagerComputed, watchOnce} from '@vueuse/core';
+import {onMounted, ref} from 'vue';
+import {useTimeoutPoll} from '@vueuse/core'
+
 
 
 const toggleNav = ref(false);
-const  once = watchOnce(toggleNav.value,()=>{
+const isHovering = ref(false);
 
-    console.log("Watch Called");
 
-});
-const mintu = computed(()=>{
-    once;
-});
-/*const {} = useTimeoutFn()(()=>{
-    console.log(toggleNav.value);
-},3000);*/
 
-/*const {isPending,start,stop} = useTimeoutFn(()=>{
-   if(toggleNav.value ===true){
-       toggleNav.value = false;
-   }
-    console.log("Value is : "+toggleNav.value);
+const {isActive,resume,pause} = useTimeoutPoll(()=>{
+    if(toggleNav.value && isHovering.value ===false){
 
-},3000);*/
+        toggleNav.value = false;
+        console.log(toggleNav.value+"::"+isHovering.value);
+       // alert("Hovering");
+    }
+
+},3000)
+
+
 
 onMounted(()=>{
-//start();
-
-    /*useTimeoutPoll(()=>{
-        console.log(toggleNav.value);
-    },3000);*/
-
-   /* setTimeout(()=>{
-        console.log(toggleNav.value);
-    },3000)*/
+resume();
 });
 
 </script>
@@ -77,8 +66,8 @@ onMounted(()=>{
             </nav>
 
             <!-- xs to lg -->
-            <nav @mouseover="stop" :class="toggleNav ? 'block': 'hidden'" class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden transition-all duration-1000">
-                <div class="flow-root">
+            <nav @mouseover="isHovering = true" @mouseleave="isHovering = false"  :class="toggleNav ? 'block': 'hidden'" class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden transition-all duration-1000">
+                <div class="flow-root" >
                     <div class="flex flex-col px-6 -my-2 space-y-1">
                         <a href="#" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Features </a>
 
