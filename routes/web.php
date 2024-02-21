@@ -40,6 +40,10 @@ Route::get('/contactus',function (){
     return Inertia::render('ContactUs');
 })->name('contact');
 
+Route::get('/login',function (){
+    return Inertia::render('LoginPage');
+})->name('login');
+
 
 Route::middleware([
     'auth:sanctum',
