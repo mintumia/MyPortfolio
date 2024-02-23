@@ -8,8 +8,8 @@ import MintuFooter002 from "@/Components/MintuFooter002.vue";
 <template>
 <div class="p-fluid">
 <header class="w-full">
-<!--    <mintu-navbar />-->
-    <MintuNewNavber />
+    <mintu-navbar />
+<!--    <MintuNewNavber />-->
 </header>
     <main class="max-w-[1024px] mx-auto">
         <slot />
