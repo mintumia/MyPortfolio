@@ -16,6 +16,7 @@ import MintuTestimonial from "@/Components/MintuTestimonial.vue";
 import MintuHeroTest from "@/Components/MintuHeroTest.vue";
 import MintuFeatures from "@/Components/MintuFeatures.vue";
 import MintuSignup from "@/Components/MintuSignup.vue";
+import MintuScrolUp from "@/Components/MintuScrolUp.vue";
 
 const date = ref();
 
@@ -27,11 +28,12 @@ const date = ref();
     <div>
         <Head title="Home" />
 <!--        <mintu-test-menu />-->
-        <MintuToast />
+        <mintu-main-view/>
         <MintuHeroTest />
         <MintuTestimonial />
         <MintuFeatures />
         <MintuSignup />
+        <MintuScrolUp />
 
 <!--        <div class="card flex justify-content-center">
             <Button :pt="{root:{class:'bg-yellow-500 rounded p-4'}}" label="Submit" />
@@ -62,7 +64,7 @@ const date = ref();
         </div>-->
 
 
-        <mintu-main-view/>
+
         <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate explicabo neque non, quam sunt!

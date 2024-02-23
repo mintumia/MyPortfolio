@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 
-
-
 [x-cloak] {
     display: none;
 }
@@ -49,15 +47,19 @@
     }
 }
 
+*/
 @layer components {
-    body{
+    /*body {
         @apply p-1 mx-auto;
-    }
+    }*/
+
     .btn-blue {
         @apply bg-blue-500 text-white rounded-lg font-semibold shadow-md shadow-black cursor-pointer p-1 mx-auto;
     }
 
+    .mn-center {
+        @apply flex items-center content-center justify-center mx-auto;
+    }
 
 
-
-}*/
+}

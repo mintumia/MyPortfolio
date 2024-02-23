@@ -68,7 +68,7 @@ onMounted(()=>{
    </div>
 
 
-        <ul :class="toggleNav ?'max-lg:block w-full':'max-lg:hidden'" @mouseover="isHovering = true" @mouseleave="isHovering = false" class="lg:flex items-center justify-start content-center">
+        <ul id="navbar" :class="toggleNav ?'max-lg:block w-full':'max-lg:hidden'" @mouseover="isHovering = true" @mouseleave="isHovering = false" class="lg:flex items-center justify-start content-center">
             <li class="mx-3 my-2 max-lg:border-b-2 text-center"><Link class="flex items-center content-center hover:bg-blue-300 rounded-lg p-1 border-b-2 hover:border-black border-indigo-400" :href="route('home')"><span class="p-1"><icon class="text-xl opacity-80" icon="heroicons-solid:home" /> </span>Home</Link></li>
             <li class="mx-3 my-2 max-lg:border-b-2 text-center"><Link class="flex items-center content-center hover:bg-blue-300 rounded-lg p-1 border-b-2 hover:border-black border-indigo-400" :href="route('about')"><span class="p-1"><icon class="text-xl opacity-80" icon="heroicons-solid:information-circle" /> </span>About</Link></li>
             <li class="mx-3 my-2 max-lg:border-b-2 text-center"><Link class="flex items-center content-center hover:bg-blue-300 rounded-lg p-1 border-b-2 hover:border-black border-indigo-400" :href="route('service')"><span class="p-1"><icon class="text-xl opacity-80" icon="heroicons-solid:briefcase" /> </span>Service</Link></li>
