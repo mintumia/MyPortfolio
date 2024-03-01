@@ -17,6 +17,7 @@ import MintuHeroTest from "@/Components/MintuHeroTest.vue";
 import MintuFeatures from "@/Components/MintuFeatures.vue";
 import MintuSignup from "@/Components/MintuSignup.vue";
 import MintuScrolUp from "@/Components/MintuScrolUp.vue";
+import MintuAnimation from "@/Components/MintuAnimation.vue";
 
 const date = ref();
 
@@ -27,6 +28,8 @@ const date = ref();
 <mintu-layout>
     <div>
         <Head title="Home" />
+        <mintu-animation />
+
 <!--        <mintu-test-menu />-->
         <mintu-main-view/>
         <MintuHeroTest />
@@ -34,6 +37,7 @@ const date = ref();
         <MintuFeatures />
         <MintuSignup />
         <MintuScrolUp />
+
 
 <!--        <div class="card flex justify-content-center">
             <Button :pt="{root:{class:'bg-yellow-500 rounded p-4'}}" label="Submit" />

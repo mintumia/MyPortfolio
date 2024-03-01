@@ -9,7 +9,7 @@ const isClicked = ref(false);
 
 const {resume} = useTimeoutPoll(()=>{
 
-    if(document.documentElement.scrollTop > 2){
+    if(document.documentElement.scrollTop > 20){
         console.log("screen large: "+ document.documentElement.scrollTop);
         showButton.value = true;
     }else {
